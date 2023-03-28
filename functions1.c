@@ -13,7 +13,7 @@
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
- {
+{
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
 
@@ -158,4 +158,4 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 	i++;
 
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
- } /*by davidinmichael and HaryorAji*/
+} /*by davidinmichael and HaryorAji*/
